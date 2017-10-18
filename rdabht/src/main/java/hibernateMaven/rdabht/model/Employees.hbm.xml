@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Employees" table="employees" catalog="mydb" optimistic-lock="version">
+        <id name="eid" type="java.lang.Integer">
+            <column name="eid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="courses" class="model.Courses" fetch="select">
+            <column name="cid" />
+        </many-to-one>
+        <many-to-one name="division" class="model.Division" fetch="select">
+            <column name="division_id" />
+        </many-to-one>
+        <property name="ename" type="string">
+            <column name="ename" length="45" not-null="true" />
+        </property>
+        <property name="emppic" type="string">
+            <column name="emppic" length="300" />
+        </property>
+        <property name="designation" type="string">
+            <column name="designation" length="45" />
+        </property>
+        <property name="whtasapp" type="string">
+            <column name="whtasapp" length="45" />
+        </property>
+        <property name="localnum" type="string">
+            <column name="localnum" length="45" />
+        </property>
+        <property name="skype" type="string">
+            <column name="skype" length="45" />
+        </property>
+        <property name="dropbox" type="string">
+            <column name="dropbox" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" unique="true" />
+        </property>
+        <property name="dob" type="date">
+            <column name="dob" length="10" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+        <property name="passportno" type="string">
+            <column name="passportno" length="45" />
+        </property>
+        <property name="passportExpiry" type="date">
+            <column name="passport_expiry" length="10" />
+        </property>
+        <property name="visaNo" type="string">
+            <column name="visa_no" length="45" />
+        </property>
+        <property name="visaExpiry" type="date">
+            <column name="visa_expiry" length="10" />
+        </property>
+        <property name="doj" type="date">
+            <column name="doj" length="10" not-null="true" />
+        </property>
+        <property name="dor" type="date">
+            <column name="dor" length="10" />
+        </property>
+        <property name="statusId" type="int">
+            <column name="status_id" not-null="true" />
+        </property>
+        <property name="experence" type="string">
+            <column name="experence" length="45" />
+        </property>
+        <property name="nationality" type="string">
+            <column name="nationality" length="45" />
+        </property>
+        <property name="qulification" type="string">
+            <column name="qulification" length="45" />
+        </property>
+        <property name="skillset" type="string">
+            <column name="skillset" length="100" />
+        </property>
+        <property name="resetToken" type="string">
+            <column name="reset_token" length="50" />
+        </property>
+        <property name="resetDate" type="timestamp">
+            <column name="reset_date" length="19" />
+        </property>
+        <set name="batchesForLocalSpoc" table="batch" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="local_spoc" />
+            </key>
+            <one-to-many class="model.Batch" />
+        </set>
+        <set name="batchesForSoftSkillTrainer" table="batch" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="soft_skill_trainer" />
+            </key>
+            <one-to-many class="model.Batch" />
+        </set>
+        <set name="batchesForTechTrainer" table="batch" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tech_trainer" />
+            </key>
+            <one-to-many class="model.Batch" />
+        </set>
+        <set name="consultants" table="consultant" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="eid" not-null="true" />
+            </key>
+            <one-to-many class="model.Consultant" />
+        </set>
+    </class>
+</hibernate-mapping>

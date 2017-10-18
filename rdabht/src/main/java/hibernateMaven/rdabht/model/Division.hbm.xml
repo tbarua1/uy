@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Division" table="division" catalog="mydb" optimistic-lock="version">
+        <id name="divisionId" type="java.lang.Integer">
+            <column name="division_id" />
+            <generator class="identity" />
+        </id>
+        <property name="dname" type="string">
+            <column name="dname" length="45" not-null="true" />
+        </property>
+        <set name="consultants" table="consultant" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="divison_id" not-null="true" />
+            </key>
+            <one-to-many class="model.Consultant" />
+        </set>
+        <set name="batches" table="batch" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="division_id" />
+            </key>
+            <one-to-many class="model.Batch" />
+        </set>
+        <set name="districts" table="district" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="division_id" />
+            </key>
+            <one-to-many class="model.District" />
+        </set>
+        <set name="universities" table="university" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="division_id" not-null="true" />
+            </key>
+            <one-to-many class="model.University" />
+        </set>
+        <set name="employeeses" table="employees" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="division_id" />
+            </key>
+            <one-to-many class="model.Employees" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/ant-antlr-1.6.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/antlr-2.7.5H3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/asm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/cglib-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/ehcache-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/jta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/log4j-1.2.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/HibernateSaveDateType/HibernateSaveDateType/lib/xerces-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhishek.sehgal/Downloads/mysql-connector-java-5.1.41.tar/mysql-connector-java-5.1.41/mysql-connector-java-5.1.41-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

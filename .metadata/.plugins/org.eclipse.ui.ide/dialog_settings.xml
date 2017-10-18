@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\abhishek.sehgal\Documents\NetBeansProjects\rda"/>
+		<item value="C:\Tarkeshwar\git Projects\SpringIn28Minutes"/>
+		<item value="C:\Tarkeshwar\git Projects\SpringIn28Minutes\2.RealWorldExample"/>
+		<item value="C:\Tarkeshwar\git Projects\SpringIn28Minutes\1.BasicExample"/>
+		<item value="C:\Tarkeshwar\git Projects\SpringIn28Minutes\0.FirstExample"/>
+		<item value="C:\Tarkeshwar\git Projects\demo"/>
+		<item value="C:\Users\abhishek.sehgal\Downloads\SpringExample17"/>
+		<item value="C:\Users\abhishek.sehgal\Downloads\SpringHibernateExample\SpringHibernateExample"/>
+		<item value="C:\Users\abhishek.sehgal\Downloads\tanveer\librarymanagementjava"/>
+		<item value="C:\Users\abhishek.sehgal\Downloads\spring2-mvc-xml-hello-world"/>
+		<item value="C:\Tarkeshwar\studentsWork"/>
+	</list>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="498" key="DIALOG_X_ORIGIN"/>
+		<item value="251" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Consultant" table="consultant" catalog="mydb" optimistic-lock="version">
+        <id name="consultantId" type="java.lang.Integer">
+            <column name="consultant_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="division" class="model.Division" fetch="select">
+            <column name="divison_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="employees" class="model.Employees" fetch="select">
+            <column name="eid" not-null="true" />
+        </many-to-one>
+        <property name="type" type="string">
+            <column name="Type" length="45" />
+        </property>
+        <set name="batches" table="batch" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ey_spoc" />
+            </key>
+            <one-to-many class="model.Batch" />
+        </set>
+    </class>
+</hibernate-mapping>

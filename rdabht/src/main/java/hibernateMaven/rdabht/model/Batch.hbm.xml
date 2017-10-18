@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Batch" table="batch" catalog="mydb" optimistic-lock="version">
+        <id name="batchcode" type="string">
+            <column name="Batchcode" length="45" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="consultant" class="model.Consultant" fetch="select">
+            <column name="ey_spoc" />
+        </many-to-one>
+        <many-to-one name="courses" class="model.Courses" fetch="select">
+            <column name="cid" />
+        </many-to-one>
+        <many-to-one name="department" class="model.Department" fetch="select">
+            <column name="department_id" />
+        </many-to-one>
+        <many-to-one name="division" class="model.Division" fetch="select">
+            <column name="division_id" />
+        </many-to-one>
+        <many-to-one name="employeesByLocalSpoc" class="model.Employees" fetch="select">
+            <column name="local_spoc" />
+        </many-to-one>
+        <many-to-one name="employeesBySoftSkillTrainer" class="model.Employees" fetch="select">
+            <column name="soft_skill_trainer" />
+        </many-to-one>
+        <many-to-one name="employeesByTechTrainer" class="model.Employees" fetch="select">
+            <column name="tech_trainer" />
+        </many-to-one>
+        <many-to-one name="university" class="model.University" fetch="select">
+            <column name="university_id" />
+        </many-to-one>
+        <property name="fbgroup" type="string">
+            <column name="fbgroup" length="45" />
+        </property>
+        <property name="startingDate" type="date">
+            <column name="starting_Date" length="10" />
+        </property>
+        <property name="track" type="string">
+            <column name="Track" length="45" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="45" />
+        </property>
+        <property name="uniSpocName" type="string">
+            <column name="uni_spoc_name" length="45" />
+        </property>
+        <property name="uniSpocContact" type="string">
+            <column name="uni_spoc_contact" length="45" />
+        </property>
+        <property name="schedule" type="string">
+            <column name="schedule" length="45" />
+        </property>
+        <set name="batchschedules" table="batchschedule" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Batchcode" length="45" />
+            </key>
+            <one-to-many class="model.Batchschedule" />
+        </set>
+    </class>
+</hibernate-mapping>

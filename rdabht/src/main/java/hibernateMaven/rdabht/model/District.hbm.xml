@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.District" table="district" catalog="mydb" optimistic-lock="version">
+        <id name="did" type="java.lang.Integer">
+            <column name="did" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="division" class="model.Division" fetch="select">
+            <column name="division_id" />
+        </many-to-one>
+        <property name="dname" type="string">
+            <column name="dname" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.LictUggroups" table="lict_uggroups" catalog="mydb" optimistic-lock="version">
+        <id name="groupId" type="java.lang.Integer">
+            <column name="GroupID" />
+            <generator class="identity" />
+        </id>
+        <property name="label" type="string">
+            <column name="Label" length="300" />
+        </property>
+    </class>
+</hibernate-mapping>

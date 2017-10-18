@@ -1,0 +1,16 @@
+<diskStore path="java.io.tmpdir"/>
+<defaultCache
+maxElementsInMemory="1000"
+eternal="false"
+timeToIdleSeconds="120"
+timeToLiveSeconds="120"
+overflowToDisk="true"
+/>
+
+<cache name="Employee"
+maxElementsInMemory="500"
+eternal="true"
+timeToIdleSeconds="0"
+timeToLiveSeconds="0"
+overflowToDisk="false"
+/>

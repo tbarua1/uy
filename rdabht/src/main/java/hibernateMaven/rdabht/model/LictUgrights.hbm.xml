@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.LictUgrights" table="lict_ugrights" catalog="mydb" optimistic-lock="version">
+        <composite-id name="id" class="model.LictUgrightsId">
+            <key-property name="tableName" type="string">
+                <column name="TableName" length="300" />
+            </key-property>
+            <key-property name="groupId" type="int">
+                <column name="GroupID" />
+            </key-property>
+        </composite-id>
+        <property name="accessMask" type="string">
+            <column name="AccessMask" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

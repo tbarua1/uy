@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Batchschedule" table="batchschedule" catalog="mydb" optimistic-lock="version">
+        <id name="sid" type="java.lang.Integer">
+            <column name="sid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="batch" class="model.Batch" fetch="select">
+            <column name="Batchcode" length="45" />
+        </many-to-one>
+        <property name="sdate" type="date">
+            <column name="sdate" length="10" />
+        </property>
+        <property name="stime" type="time">
+            <column name="stime" length="8" />
+        </property>
+        <property name="etime" type="time">
+            <column name="etime" length="8" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="45" />
+        </property>
+        <property name="remark" type="string">
+            <column name="remark" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

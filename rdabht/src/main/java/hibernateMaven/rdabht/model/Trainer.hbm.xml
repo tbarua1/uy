@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Trainer" table="trainer" catalog="mydb" optimistic-lock="version">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="courses" class="model.Courses" fetch="select">
+            <column name="cid" />
+        </many-to-one>
+        <property name="date" type="date">
+            <column name="date" length="10" />
+        </property>
+        <property name="emailid" type="string">
+            <column name="emailid" />
+        </property>
+        <property name="experience" type="string">
+            <column name="experience" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="natianality" type="string">
+            <column name="natianality" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" />
+        </property>
+        <property name="qualification" type="string">
+            <column name="qualification" />
+        </property>
+        <property name="registeredDate" type="date">
+            <column name="registeredDate" length="10" />
+        </property>
+        <property name="skillset" type="string">
+            <column name="skillset" />
+        </property>
+        <property name="skype" type="string">
+            <column name="skype" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" />
+        </property>
+        <property name="usertype" type="string">
+            <column name="usertype" />
+        </property>
+        <property name="whatsapp" type="string">
+            <column name="whatsapp" />
+        </property>
+        <property name="photo" type="string">
+            <column name="photo" />
+        </property>
+    </class>
+</hibernate-mapping>

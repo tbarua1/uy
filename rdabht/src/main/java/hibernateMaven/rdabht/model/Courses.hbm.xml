@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 7:26:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Courses" table="courses" catalog="mydb" optimistic-lock="version">
+        <id name="cid" type="java.lang.Integer">
+            <column name="cid" />
+            <generator class="identity" />
+        </id>
+        <property name="track" type="string">
+            <column name="track" length="45" />
+        </property>
+        <property name="cname" type="string">
+            <column name="cname" length="45" />
+        </property>
+        <property name="chours" type="java.lang.Integer">
+            <column name="chours" />
+        </property>
+        <property name="discription" type="string">
+            <column name="discription" length="45" />
+        </property>
+        <set name="employeeses" table="employees" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="cid" />
+            </key>
+            <one-to-many class="model.Employees" />
+        </set>
+        <set name="trainers" table="trainer" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="cid" />
+            </key>
+            <one-to-many class="model.Trainer" />
+        </set>
+        <set name="batches" table="batch" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="cid" />
+            </key>
+            <one-to-many class="model.Batch" />
+        </set>
+    </class>
+</hibernate-mapping>

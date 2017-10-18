@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Event" table="EVENTS">
+        <id name="id" column="EVENT_ID">
+            <generator class="increment"/>
+        </id>
+        <property name="date" type="timestamp" column="EVENT_DATE"/>
+        <property name="title"/>
+    </class>
+
+
+
+
+    <class name="EventWithAttendee" table="eventwithattendee">
+        <id name="id" column="uid" type="long" unsaved-value="null">
+            <generator class="native"/>
+        </id>
+        <property name="name" type="string" length="100"/>
+        <property name="startDate" column="start_date"
+                  type="date"/>
+        <property name="duration" type="integer"/>
+        <many-to-one name="location" column="location_id"
+                     class="Location"/>
+        <set name="attendees" cascade="all">
+            <key column="event_id"/>
+            <one-to-many class="EventAttendee"/>
+        </set>
+    </class>
+
+    <class name="EventAttendee" table="attendees">
+        <id name="id" column="uid" type="long">
+            <generator class="native"/>
+        </id>
+        <property name="firstName" type="string" length="20"/>
+        <property name="lastName" type="string" length="20"/>
+    </class>
+
+    <class name="Location" table="locations">
+        <id name="id" column="uid" type="long">
+            <generator class="native"/>
+        </id>
+        <property name="name" type="string"/>
+        <property name="address" type="string"/>
+    </class>
+</hibernate-mapping>
