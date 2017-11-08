@@ -5,7 +5,9 @@ import java.util.List;;
 public class ArraystoList {
 	 public static void main(String[] args) {
 	      String[] strs = {"alpha", "beta", "charlie"};
-	      System.out.println(Arrays.toString(strs));   // [alpha, beta, charlie]
+               String[] strs1 = new String[20];//{"alpha", "beta", "charlie"};
+	      strs1[19]="34";
+               System.out.println(Arrays.toString(strs));   // [alpha, beta, charlie]
 	 
 	      List<String> lst = Arrays.asList(strs);
 	      System.out.println(lst);  // [alpha, beta, charlie]
