@@ -6,10 +6,14 @@ import java.util.List;
 
 public class Test {
 	/*
-	 * The List interface extends Collection to define an ordered collection
-	 * with duplicates allowed. The List interface adds position-oriented
-	 * operations, as well as a new list iterator that enables the user to
-	 * traverse the list bi-directionally. ArrayList, LinkedList and vector are
+	 * The List interface extends Collection to define an 
+    ordered collection
+	 * with duplicates allowed. The List interface adds 
+    position-oriented
+	 * operations, as well as a new list iterator that 
+    enables the user to
+	 * traverse the list bi-directionally. ArrayList, 
+    LinkedList and vector are
 	 * classes implementing List interface.
 	 */
 	public static void main(String[] args) {
@@ -18,7 +22,7 @@ public class Test {
 	      lst.add("alpha");
 	      lst.add("beta");
 	      lst.add("charlie");
-	 
+	 System.out.println("before Size "+lst.size());
 	      // Use the Object[] version
 	      Object[] strArray1 = lst.toArray();
 	      System.out.println(Arrays.toString(strArray1));   // [alpha, beta, charlie]
@@ -28,6 +32,14 @@ public class Test {
 	      strArray2[0] = "delta";   // modify the returned array
 	      System.out.println(Arrays.toString(strArray2));   // [delta, beta, charlie]
 	      System.out.println(lst);
+               lst.add("alpha");
+	      lst.add("beta");
+	      lst.add("charlie");
+              System.out.println("After Size "+lst.size());
+              lst.remove("alpha");
+              System.out.println("After Size "+lst.size());
+              lst.remove(0);
+              System.out.println("After Size "+lst.size());
 	}
 
 }

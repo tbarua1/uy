@@ -15,6 +15,6 @@ public class ImmutableObject {
 	         str += "change!";   // cannot modify "immutable" objects
 	         System.out.println(str);
 	      }
-	      System.out.println(lst);   // [alpha, beta, charlie]
+	      System.out.println(lst+"Hello");   // [alpha, beta, charlie]
 	   }
 }

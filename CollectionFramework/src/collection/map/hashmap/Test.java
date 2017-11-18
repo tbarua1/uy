@@ -12,8 +12,8 @@ public class Test {
 		// TODO Auto-generated method stub
 		 Scanner in;
 		try {
-			in = new Scanner(new File(args[0]));
-			//in = new Scanner(System.in);
+			//in = new Scanner(new File(args[0]));
+			in = new Scanner(System.in);
 			 Map<String, Integer> map = new HashMap<String, Integer>();
 		      while (in.hasNext()) {
 		         String word = in.next();

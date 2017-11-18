@@ -12,7 +12,7 @@ public class LinkedHashSetTest {
 		Book book2 = new Book(2, "Android");
 		Book book3 = new Book(3, "Spring");
 
-		Set<Book> set = new LinkedHashSet<Book>();
+		Set<Book> set = new LinkedHashSet<>();
 		set.add(book1);
 		set.add(book1Dup); // duplicate id, not added
 		set.add(book1); // added twice, not added
@@ -20,7 +20,4 @@ public class LinkedHashSetTest {
 		set.add(null); // Set can contain a null
 		set.add(null); // but no duplicate
 		set.add(book2);
-		System.out.println(set);
-	}
-
-}
+		System.out.println(set);}}

@@ -13,6 +13,7 @@ public class DeleteAll {
 		vct.add("Random");
 		System.out.println("Actual vector:" + vct);
 		vct.clear();
+                
 		System.out.println("After clear vector:" + vct);
 	}
 

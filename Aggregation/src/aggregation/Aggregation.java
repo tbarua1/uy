@@ -22,8 +22,7 @@ public class Aggregation {
       Student s1 = new Student("Tarkeshwar", 1, "CSE");
         Student s2 = new Student("Prabhat", 2, "CSE");
         Student s3 = new Student("Tarun", 1, "EE");
-        Student s4 = new Student("Nitin", 2, "EE");
-     
+        Student s4 = new Student("Nitin", 2, "EE");     
         // making a List of 
         // CSE Students.
         List <Student> cse_students = new ArrayList<>();

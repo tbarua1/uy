@@ -12,9 +12,13 @@ public class Cloning {
 		vct.add("Second");
 		vct.add("Third");
 		vct.add("Random");
+                
 		System.out.println("Actual vector:"+vct);
-		Vector<String> copy = (Vector<String>) vct.clone();
-		System.out.println("Cloned vector:"+copy);
+		Vector<String> clonedCopy = (Vector<String>) vct.clone();
+                clonedCopy.add("Mr Xyz");
+                vct.add("Random1");
+		System.out.println("Cloned vector:"+clonedCopy);
+                System.out.println("Actual vector1:"+vct);
 	}
 
 }

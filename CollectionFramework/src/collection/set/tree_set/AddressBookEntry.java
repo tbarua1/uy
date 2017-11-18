@@ -10,6 +10,7 @@ public class AddressBookEntry implements Comparable<AddressBookEntry> {
 	@Override
 	public int compareTo(AddressBookEntry arg0) {
 		// TODO Auto-generated method stub
+               // return this.name==name?true:false;
 		return this.name.compareToIgnoreCase(arg0.name);
 		
 	}

@@ -1,0 +1,2 @@
+classTypes.anonymousClass
+classTypes.Person

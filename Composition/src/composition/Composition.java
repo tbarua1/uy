@@ -1,9 +1,12 @@
 /*
- Composition is a restricted form of Aggregation in which two entities are highly dependent on each other.
+ Composition is a restricted form of Aggregation in which two
+entities are highly dependent on each other.
 
     It represents part-of relationship.
-    In composition, both the entities are dependent on each other.
-    When there is a composition between two entities, the composed object cannot exist without the other entity.
+    In composition, both the entities are dependent on each 
+other.
+    When there is a composition between two entities, the 
+composed object cannot exist without the other entity.
 
  */
 package composition;
@@ -29,7 +32,7 @@ public class Composition {
          
         // Creating the list which contains the 
         // no. of books.
-        List<Book> books = new ArrayList<>();
+        List<Book> books = new ArrayList<Book>();
         books.add(b1);
         books.add(b2);
         books.add(b3);

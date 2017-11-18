@@ -13,6 +13,13 @@ public class GetSubList {
 		vct.add("Third");
 		vct.add("Random");
 		vct.add("Click");
+                String s="Hell how are you \t df df  dfg "
+                        + " dfgdf "
+                        + "fg f";
+                System.out.println(""+s);
+            String substring = s.substring(3, 7);
+            System.out.println(""+substring);
+            
 		System.out.println("Actual vector:" + vct);
 		List<String> list = vct.subList(2, 4);
 		System.out.println("Sub List: " + list);
