@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SpinnerTest</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="class_prompt">Choose a Class</string>
+
+    <string-array name="student_class">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+        <item>Fifth</item>
+        <item>Sixth</item>
+        <item>Seventh</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+    </string-array>
+</resources>

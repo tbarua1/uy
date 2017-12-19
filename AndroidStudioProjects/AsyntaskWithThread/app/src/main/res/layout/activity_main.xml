@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tarkeshwar.asyntaskwiththread.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="#444444"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        android:text="Sleep time in milliseconds:"/>
+    <EditText
+        android:id="@+id/et_time"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_toRightOf="@id/tv_time"
+        android:layout_alignTop="@id/tv_time"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/btn_do_it"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="260dip"
+        android:layout_below="@id/et_time"
+        android:text="Run Async task" />
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="400dip"
+        android:layout_height="100dip"
+        android:textSize="7pt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_do_it"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="260dip"
+        android:textColor="#AA0000"
+        android:text=""/>
+</RelativeLayout>

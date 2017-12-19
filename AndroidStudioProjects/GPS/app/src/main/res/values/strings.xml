@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GPS</string>
+    <string name="GPSAlertDialogTitle">Hello Moto</string>
+    <string name="GPSAlertDialogMessage">Moto Msg</string>
+    <string name="action_settings">Position to dialog</string>
+    <string name="cancel">Cancle String</string>
+</resources>

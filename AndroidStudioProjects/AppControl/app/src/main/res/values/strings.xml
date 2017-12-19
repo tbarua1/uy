@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppControl</string>
+    <string name="backward">Backward</string>
+    <string name="forward">Forward</string>
+    <string name="stop">Stop</string>
+    <string name="connect">Connect</string>
+</resources>

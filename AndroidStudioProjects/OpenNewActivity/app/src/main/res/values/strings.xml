@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OpenNewActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="btn_text">Take me to Next Activity</string>
+</resources>

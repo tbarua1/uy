@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    tools:context="com.example.tarkeshwar.charts.MainActivity">
+
+    <Button
+        android:id="@+id/top_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:text="TOPUP Chart" />
+
+    <Button
+        android:id="@+id/foundation_skills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+      
+        android:text="Foundation Skills Chart" />
+
+    <Button
+        android:id="@+id/top_up_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+      
+        android:text="TOPUP Division Chart" />
+
+    <Button
+        android:id="@+id/ites_fs_final"
+        android:layout_width="wrap_content"
+      
+        android:layout_height="wrap_content"
+      
+        android:text="ITES FS Final Chart" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+      
+        android:text="Division Chart" />
+
+    <Button
+        android:id="@+id/ites_fs_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+      
+        android:text="ITES FS Division Chart" />
+
+    <Button
+        android:id="@+id/placements"
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:text="Placement Chart" />
+
+    <Button
+        android:id="@+id/top_up_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOPUP Final Chart" />
+    <Button
+        android:id="@+id/graph_over_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graph Over All " />
+    <Button
+        android:id="@+id/graph_final_assessment_fs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graph Final Assessement Foundation Skills " />
+    <Button
+        android:id="@+id/graph_division_topup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graph Division Topup " />
+
+</LinearLayout>

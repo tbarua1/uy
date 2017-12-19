@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:id="@+id/resend_scroll">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+      <!--  <include layout="@layout/partial_resend_layout"
+            android:layout_height="110dp"
+            android:layout_width="124dp"
+            android:id="@+id/resend_invite"
+            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_invitee_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"  android:textSize="22sp"/>
+               <!-- android:fontFamily="@string/regular_roboto"
+                android:textColor="@color/white"-->
+
+
+            <TextView
+                android:id="@+id/text_invitee_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" android:textSize="22sp"/>
+            <!--    android:fontFamily="@string/regular_roboto"
+                android:textColor="@color/white"-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>

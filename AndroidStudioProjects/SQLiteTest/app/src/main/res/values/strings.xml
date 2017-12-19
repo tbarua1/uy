@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SQLiteTest</string>
+    <string name="name">Name of Person</string>
+    <string name="phone">Phone Number</string>
+    <string name="add_contact">Add Contact Number</string>
+    <string name="view_contact">Show Contacts</string>
+</resources>

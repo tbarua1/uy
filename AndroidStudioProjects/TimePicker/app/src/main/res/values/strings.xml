@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TimePicker</string>
+    <string name="time_current">Current Time</string>
+    <string name="time_selected">Selected Time</string>
+    <string name="time_pick">Time Pick</string>
+    <string name="time_save">Time Save</string>
+</resources>

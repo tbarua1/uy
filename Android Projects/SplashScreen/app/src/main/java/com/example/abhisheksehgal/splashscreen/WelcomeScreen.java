@@ -1,5 +1,6 @@
 package com.example.abhisheksehgal.splashscreen;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,6 +17,11 @@ public class WelcomeScreen extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
+        ActionBar actionBar = getActionBar();
+
+
+        // Enabling Back navigation on Action Bar icon
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
