@@ -1,0 +1,142 @@
+Note- Answer any 15 question from Section A and All questions are compolsory in section - B
+Section - A
+Q1. What are the major features in different versions of Spring Framework?
+Q2. What is a Spring Framework?
+Q3. List the advantages of Spring Framework
+Q4. What are the different features of Spring Framework?
+Q5. How many modules are there in Spring Framework and what are they?
+Q6. What is a Spring configuration file?
+Q7. What are the different components of a Spring application?
+Q8. What are the various ways of using Spring Framework?
+Q9. What is Spring IOC Container?
+Q10. What do you mean by Dependency Injection?
+Q11. How to install spring boot in IntelliJ IDEA?
+Q12. Please change default server port from 8080 to 9090? 
+Q13. How to resolve whitelabel error page in spring boot application?
+Q14. How are i18n and localization supported in Spring MVC?
+Q15. Differentiate between a Bean Factory and an Application Context.
+Q16. Difference between Autowired , Inject and Qualifier Annotation
+
+Section - B
+Q 1 - Which of the following is correct assertion about spring?
+A) - Spring enables developers to develop enterprise-class applications using POJOs.
+B) - Spring is organized in a modular fashion.
+C) - Testing an application written with spring is simple because environment-dependent code is moved into this framework.
+D) - All of above.
+
+2. The concept of an endpoint in web services is much like that of a controller in web applications.
+a) True
+b) False
+c) None of the above
+d) All of the above
+
+3. An alternative to Spring HibernateTemplate is:-
+a) HibernateContext
+b) Hibernate contextual sessions
+c) All of the mentioned
+d) None of the mentioned
+
+4. DAO methods must be made transactional.
+a) True
+b) False
+c) None of the above
+d) All of the above
+
+5. Annotation to find a transaction and then fail, complaining that no Hibernate session been bound to the thread.
+a) @Transaction
+b) @Transactional
+c) @Transactions
+d) None of the mentioned
+
+6. Class used to have full access to the Spring context’s life cycle machinery and dependency injection.
+    A. DelegatingFilterProxy
+    B. WebApplicationContextUtils.getRequiredWeb()
+    C. WebApplicationUtils.getRequiredWebApplicationContext()
+    D. None of the mentioned
+
+7. What is Front controller pattern in spring?
+(A) Dispatcher servlet
+(B) Web.xml
+(C) Spring.xml
+(D) Controller.java Any Spring controller used in MVC
+
+8. - What is singleton scope?
+A - This scopes the bean definition to a single instance per Spring IoC container.
+B - This scopes the bean definition to a single instance per HTTP Request.
+C - This scopes the bean definition to a single instance per HTTP Session.
+D - This scopes the bean definition to a single instance per HTTP Application/ Global session
+
+9. What are the JPA @Entity association attributes?
+    A. Association validation
+    B. Association multiplicity
+    C. Association cascade behavior
+    D. Association direction
+
+10. What are beans in the concept of Spring or what are spring beans?
+(A) Controller classes
+(B) Service classes
+(C) Repository
+(D) Any class that is managed by the container.
+
+11.Which interface in spring is responsible for Instantiating and managing the so called Spring beans?
+(A) Bean Factory
+(B) ApplicationContext
+(C) BeanDefenition
+(D) BeanFactoryAware
+
+12. JPA implementation is provided by ---?
+    A. Hibernate
+    B. Toplink
+    C. Ibatis
+    D. All of the above 
+
+13. What is byName mode of autowiring?
+A - Default setting which means no autowiring and you should use explicit bean reference for wiring.
+B - Autowiring by property name. Spring tries to match and wire its properties with the beans defined by the same names in the configuration file.
+C - Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.
+D - Similar to byType, but type applies to constructor arguments.
+
+14. What is Spring MVC framework?
+A - Spring MVC framework is Model-Value-Class architecture and used to bind model data with values.
+B - The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications.
+C - Spring MVC framework is used for Transaction management for Web Applications.
+D - Spring MVC framework is used for AOP for Web Applications.
+
+15. What is the Life Cycle Of A Jpa Entity?
+    A. New / Transient
+    B. Managed / Persisted
+    C. Detached
+    D. All of the above 
+
+16. Which of the following statement is correct?
+    A. Spring is not an open source framework.
+    B. Spring is heavyweight.
+    C. Spring supports tight coupling.
+    D. Spring using Dependency Injection and supports loose coupling.
+
+17. What annotation is used to map a method for PUT request?
+    A. @PutMapping
+    B. @PostMapping
+    C. @Put
+    D. @Post
+
+18. What is the built-in library in Spring Boot used to serialize objects to JSON format?
+    A. JsonFormatter
+    B. Jackson
+    C. Gson
+    D. MessageConverter
+
+19. Annotation for Hibernate exceptions to be translated into Spring’s DataAccessException for consistent exception handling
+    A. @Translation
+    B. @Repo
+    C. @Repository
+    D. None of the above 
+
+20. What annotation is used to map value to the method argument in http://localhost/factorial/{value}?
+    @Map
+    @Param
+    @RequestParam
+    @PathVariable
+
+
+
